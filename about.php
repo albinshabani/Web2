@@ -18,7 +18,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">Glozzom</a>
+      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -50,7 +50,7 @@
       <div class="row">
         <div class="col-md-6 m-auto text-center">
           <h1>About Us</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+          <p>"Inspiring growth, one click at a time."</p>
         </div>
       </div>
     </div>
@@ -62,14 +62,8 @@
       <div class="row">
         <div class="col-md-6">
           <h1>What We Do</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fuga eaque. Amet, assumenda aliquid tempore dolorum
-            error eveniet doloribus sed repellat quod, dolores fuga ipsam soluta. Aliquam accusantium pariatur aut sint deleniti
-            laborum ducimus voluptatem? Architecto cumque quod suscipit officiis soluta, voluptate dicta blanditiis similique
-            praesentium temporibus adipisci debitis labore!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, fuga eaque. Amet, assumenda aliquid tempore dolorum
-            error eveniet doloribus sed repellat quod, dolores fuga ipsam soluta. Aliquam accusantium pariatur aut sint deleniti
-            laborum ducimus voluptatem? Architecto cumque quod suscipit officiis soluta, voluptate dicta blanditiis similique
-            praesentium temporibus adipisci debitis labore!</p>
+          <p>In today's dynamic digital landscape, success hinges on the ability to navigate the intricacies of business, marketing, and web development with finesse. At BizWeb, we understand the significance of staying ahead in these domains. That's why we've curated a range of comprehensive courses designed to equip individuals with the knowledge and skills needed to thrive in the competitive market.</p>
+          <p>Our mission is simple: to empower aspiring entrepreneurs, marketers, and web developers to realize their full potential and achieve their goals. Whether you're a seasoned professional looking to enhance your skill set or a newcomer eager to dive into the world of business and technology, our courses offer something for everyone.</p>
         </div>
         <div class="col-md-6">
           <img src="https://source.unsplash.com/random/700x700/?technology" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
@@ -86,8 +80,8 @@
           <div class="card bg-danger text-white text-center">
             <div class="card-body">
               <i class="fas fa-building fa-3x"></i>
-              <h3>Sample Heading</h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci.
+              <h3>Business</h3>
+              Foundations of Business Management,Marketing Strategy and Planning,Strategic Business Development and Business Ethics and Corporate Social Responsibility
             </div>
           </div>
         </div>
@@ -95,8 +89,8 @@
           <div class="card bg-dark text-white text-center">
             <div class="card-body">
               <i class="fas fa-bullhorn fa-3x"></i>
-              <h3>Sample Heading</h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci.
+              <h3>Marketing</h3>
+              Introduction to Marketing,Social Media Marketing,Content Marketing Strategy,Brand Management,Market Research and Consumer Behavior and Integrated Marketing Communications
             </div>
           </div>
         </div>
@@ -104,38 +98,8 @@
           <div class="card bg-danger text-white text-center">
             <div class="card-body">
               <i class="fas fa-comments fa-3x"></i>
-              <h3>Sample Heading</h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="col-md-4">
-          <div class="card bg-dark text-white text-center">
-            <div class="card-body">
-              <i class="fas fa-box fa-3x"></i>
-              <h3>Sample Heading</h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-danger text-white text-center">
-            <div class="card-body">
-              <i class="fas fa-credit-card fa-3x"></i>
-              <h3>Sample Heading</h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card bg-dark text-white text-center">
-            <div class="card-body">
-              <i class="fas fa-coffee fa-3x"></i>
-              <h3>Sample Heading</h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, adipisci.
+              <h3>Web</h3>
+              Web Development Fundamentals,Frontend Web Development,Backend Web Development,Web Design Principles and Web Security and Performance Optimization
             </div>
           </div>
         </div>
@@ -146,37 +110,37 @@
   <!-- TESTIMONIALS -->
   <section id="testimonials" class="p-4 bg-dark text-white">
     <div class="container">
-      <h2 class="text-center">testimonials</h2>
+      <h2 class="text-center">Testimonials</h2>
       <div class="row text-center">
         <div class="col">
           <div class="slider">
             <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+                "Outstanding marketing insights! Thanks to BizWeb Academy, I've seen a significant boost in my business's online presence."
                 </p>
                 <footer class="blockquote-footer">John Doe From
-                  <cite title="Company 1">Company 1</cite>
+                  <cite title="Company 1"> Washington, D.C. </cite>
                 </footer>
               </blockquote>
             </div>
             <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+                "Highly recommend BizWeb Academy's business courses. Practical, insightful, and worth every penny!"
                 </p>
-                <footer class="blockquote-footer">Sam Smith From
-                  <cite title="Company 2">Company 2</cite>
+                <footer class="blockquote-footer">Giovanni Rossi From
+                  <cite title="Company 2">Rome</cite>
                 </footer>
               </blockquote>
             </div>
             <div>
               <blockquote class="blockquote">
                 <p class="mb-0">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat.
+                "Impressed by the web development skills I gained with BizWeb Academy. Clear instruction, great results!"
                 </p>
-                <footer class="blockquote-footer">Meghan Williams From
-                  <cite title="Company 3">Company 3</cite>
+                <footer class="blockquote-footer">Camille Dubois From
+                  <cite title="Company 3">Marseille</cite>
                 </footer>
               </blockquote>
             </div>
@@ -192,7 +156,7 @@
       <div class="row">
         <div class="col">
           <p>Copyright &copy;
-            <span id="year"></span> Glozzom</p>
+            <span id="year"></span> BizWeb Academy</p>
         </div>
       </div>
     </div>
