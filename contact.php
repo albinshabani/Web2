@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">Glozzom</a>
+      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,7 +48,7 @@
       <div class="row">
         <div class="col-md-6 m-auto text-center">
           <h1>Contact Us</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+          <p>"Get in touch – we're here to help, anytime."</p>
         </div>
       </div>
     </div>
@@ -62,13 +62,13 @@
           <div class="card p-4">
             <div class="card-body">
               <h4>Get In Touch</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, odio!</p>
+              <p>Questions or concerns? Reach out to us anytime. We're here to assist you!</p>
               <h4>Address</h4>
-              <p>550 Main st, Boston MA</p>
+              <p>Rruga Adem Jashari 23, Prishtina, Kosovo</p>
               <h4>Email</h4>
-              <p>test@test.com</p>
+              <p>bizwebacademy@gmail.com</p>
               <h4>Phone</h4>
-              <p>(555) 555-5555</p>
+              <p>(+383) 49-555-777</p>
             </div>
           </div>
         </div>
@@ -126,22 +126,22 @@
       <div class="row">
         <div class="col-md-3">
           <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle mb-2">
-          <h4>Jane Doe</h4>
+          <h4>Elira Gashi</h4>
           <small>Marketing Manager</small>
         </div>
         <div class="col-md-3">
           <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle mb-2">
-          <h4>Sara Williams</h4>
+          <h4>Liriana Krasniqi</h4>
           <small>Business Manager</small>
         </div>
         <div class="col-md-3">
           <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle mb-2">
-          <h4>John Doe</h4>
+          <h4>Arben Berisha</h4>
           <small>CEO</small>
         </div>
         <div class="col-md-3">
           <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle mb-2">
-          <h4>Steve Smith</h4>
+          <h4>Lirim Mustafa</h4>
           <small>Web Developer</small>
         </div>
       </div>
@@ -154,7 +154,7 @@
       <div class="row">
         <div class="col">
           <p>Copyright &copy;
-            <span id="year"></span> Glozzom</p>
+            <span id="year"></span> BizWeb Academy</p>
         </div>
       </div>
     </div>
