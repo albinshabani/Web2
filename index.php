@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">Glozzom</a>
+      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,9 +55,8 @@
         <div class="carousel-item carousel-image-1 active">
           <div class="container">
             <div class="carousel-caption d-none d-sm-block text-right mb-5">
-              <h1 class="display-3">Heading One</h1>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
-                quod aliquid inventore vero perspiciatis.</p>
+              <h1 class="display-3">Business Academy</h1>
+              <p class="lead">Learn essential business skills and strategies from industry experts. Join us and unlock your potential today!</p>
               <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
             </div>
           </div>
@@ -66,9 +65,8 @@
         <div class="carousel-item carousel-image-2">
           <div class="container">
             <div class="carousel-caption d-none d-sm-block mb-5">
-              <h1 class="display-3">Heading Two</h1>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
-                quod aliquid inventore vero perspiciatis.</p>
+              <h1 class="display-3">Marketing Academy</h1>
+              <p class="lead">Discover the latest marketing trends and techniques. Elevate your marketing game with us!</p>
               <a href="#" class="btn btn-primary btn-lg">Learn More</a>
             </div>
           </div>
@@ -77,9 +75,8 @@
         <div class="carousel-item carousel-image-3">
           <div class="container">
             <div class="carousel-caption d-none d-sm-block text-right mb-5">
-              <h1 class="display-3">Heading Three</h1>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
-                quod aliquid inventore vero perspiciatis.</p>
+              <h1 class="display-3">Web Development Academy</h1>
+              <p class="lead">Master the art of web development. Build dynamic websites and applications with our comprehensive courses.</p>
               <a href="#" class="btn btn-success btn-lg">Learn More</a>
             </div>
           </div>
@@ -101,23 +98,24 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-4 text-center">
-          <i class="fas fa-cog fa-3x mb-2"></i>
-          <h3>Turning Gears</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        <i class="fas fa-chart-line fa-3x mb-2"></i>
+          <h3>Business Strategies</h3>
+          <p>Learn effective business strategies to drive growth and success in your ventures.</p>
         </div>
         <div class="col-md-4 mb-4 text-center">
-          <i class="fas fa-cloud fa-3x mb-2"></i>
-          <h3>Sending Data</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        <i class="fas fa-database fa-3x mb-2"></i>
+          <h3>Data Management</h3>
+          <p>Master the art of data management and leverage it for informed decision-making.</p>
         </div>
         <div class="col-md-4 mb-4 text-center">
-          <i class="fas fa-cart-plus fa-3x mb-2"></i>
-          <h3>Making Money</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+        <i class="fas fa-store-alt fa-3x mb-2"></i>
+          <h3>E-commerce Solutions</h3>
+          <p>Explore e-commerce solutions and learn how to effectively monetize your online presence.</p>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- HOME HEADING SECTION -->
   <section id="home-heading" class="p-5">
@@ -125,9 +123,8 @@
       <div class="row">
         <div class="col">
           <div class="container pt-5">
-            <h1>Are You Ready To Get Started?</h1>
-            <p class="d-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eaque magni sit dolores. Nisi, dolor nam modi perspiciatis
-              consequatur soluta.</p>
+            <h1>Welcome to our Academy!</h1>
+            <p class="d-none d-md-block">Ready to embark on a journey of learning and discovery? Join us and unlock your potential!</p>
           </div>
         </div>
       </div>
@@ -139,10 +136,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet blanditiis incidunt iusto corrupti illum
-            cum laudantium ex sequi amet.</p>
-          <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+          <h3>About Us</h3>
+          <p>Our academy offers comprehensive courses in business, marketing, and web development, designed to equip you with the skills and knowledge needed for success in today's competitive landscape.</p>
+          <a href="about.php" class="btn btn-outline-danger btn-lg">Learn More</a>
         </div>
         <div class="col-md-6">
           <img src="img/laptop.png" alt="" class="img-fluid">
@@ -150,6 +146,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- VIDEO PLAY -->
   <section id="video-play">
@@ -220,18 +217,17 @@
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
+ <!-- NEWSLETTER -->
   <section id="newsletter" class="text-center p-5 bg-dark text-white">
     <div class="container">
       <div class="row">
         <div class="col">
-          <h1>Sign Up For Our Newsletter</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores consectetur, quae ducimus voluptates
-            vero repellendus architecto maiores recusandae mollitia?</p>
+          <h1>Subscribe to Our Newsletter</h1>
+          <p>Stay updated with the latest news, events, and course offerings. Sign up now!</p>
           <form class="form-inline justify-content-center">
-            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
-            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
-            <button class="btn btn-primary mb-2">Submit</button>
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Your Name">
+            <input type="email" class="form-control mb-2 mr-2" placeholder="Enter Your Email">
+            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
           </form>
         </div>
       </div>
@@ -244,7 +240,7 @@
       <div class="row">
         <div class="col">
           <p>Copyright &copy;
-            <span id="year"></span> Glozzom</p>
+            <span id="year"></span> BizWeb Academy</p>
         </div>
       </div>
     </div>
