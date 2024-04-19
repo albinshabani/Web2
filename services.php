@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">Glozzom</a>
+      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,7 +48,8 @@
       <div class="row">
         <div class="col-md-6 m-auto text-center">
           <h1>Our Services</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+          <p>
+"Service is not just what we do, it's who we are, dedicated to making every interaction remarkable."</p>
         </div>
       </div>
     </div>
@@ -61,26 +62,26 @@
         <div class="col-md-4">
           <div class="card text-center">
             <div class="card-header bg-dark text-white">
-              <h3>Service Plan One</h3>
+              <h3>Business</h3>
             </div>
             <div class="card-body">
               <h4 class="card-title">$59.99/Month</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, quis.</p>
+              <p class="card-text"></p>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature One
+                  <i class="fas fa-check"></i> Comprehensive Curriculum
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Two
+                  <i class="fas fa-check"></i> Expert Instruction
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Three
+                  <i class="fas fa-check"></i> Flexible Learning
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Four
+                  <i class="fas fa-check"></i> Networking Opportunities
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Five
+                  <i class="fas fa-check"></i> Career Support
                 </li>
               </ul>
               <a href="#" class="btn btn-danger btn-block mt-2">Get It</a>
@@ -93,26 +94,26 @@
         <div class="col-md-4">
           <div class="card text-center">
             <div class="card-header bg-dark text-white">
-              <h3>Service Plan Two</h3>
+              <h3>Marketing</h3>
             </div>
             <div class="card-body">
-              <h4 class="card-title">$99.99/Month</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, quis.</p>
+              <h4 class="card-title">$69.99/Month</h4>
+              <p class="card-text"></p>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature One
+                  <i class="fas fa-check"></i> Cutting-Edge Content
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Two
+                  <i class="fas fa-check"></i> Hands-On Projects
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Three
+                  <i class="fas fa-check"></i> Personalized Feedback
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Four
+                  <i class="fas fa-check"></i> Certification Programs
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Five
+                  <i class="fas fa-check"></i> Continuous Updates
                 </li>
               </ul>
               <a href="#" class="btn btn-danger btn-block mt-2">Get It</a>
@@ -125,32 +126,32 @@
         <div class="col-md-4">
           <div class="card text-center">
             <div class="card-header bg-dark text-white">
-              <h3>Service Plan Three</h3>
+              <h3>Web</h3>
             </div>
             <div class="card-body">
-              <h4 class="card-title">$129.99/Month</h4>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, quis.</p>
+              <h4 class="card-title">$79.99/Month</h4>
+              <p class="card-text"></p>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature One
+                  <i class="fas fa-check"></i> Comprehensive Web Development
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Two
+                  <i class="fas fa-check"></i> Responsive Design
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Three
+                  <i class="fas fa-check"></i> Interactive Learning
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Four
+                  <i class="fas fa-check"></i> Portfolio Building
                 </li>
                 <li class="list-group-item">
-                  <i class="fas fa-check"></i> Feature Five
+                  <i class="fas fa-check"></i> Community Support
                 </li>
               </ul>
               <a href="#" class="btn btn-danger btn-block mt-2">Get It</a>
             </div>
             <div class="card-footer text-muted">
-              1 Year Plan
+              1.5 Year Plan
             </div>
           </div>
         </div>
@@ -170,16 +171,14 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <a href="#collapseOne" data-toggle="collapse" data-parent="accordion">
-                    Question One
+                  Can I access the courses on any device?
                   </a>
                 </h5>
               </div>
 
               <div id="collapseOne" class="collapse">
                 <div class="card-body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio exercitationem dolor minus placeat
-                  amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae molestias nulla, quod
-                  voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                Yes, our courses are accessible on any device with an internet connection, including desktops, laptops, tablets, and smartphones. You can learn anytime, anywhere at your convenience.
                 </div>
               </div>
             </div>
@@ -188,16 +187,14 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <a href="#collapseTwo" data-toggle="collapse" data-parent="accordion">
-                    Question Two
+                  Are there any prerequisites for enrolling in the courses?
                   </a>
                 </h5>
               </div>
 
               <div id="collapseTwo" class="collapse">
                 <div class="card-body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio exercitationem dolor minus placeat
-                  amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae molestias nulla, quod
-                  voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                No specific prerequisites are required for most of our courses. However, some advanced courses may recommend prior knowledge or experience in related fields. Each course description includes information about any recommended prerequisites.
                 </div>
               </div>
             </div>
@@ -206,16 +203,14 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <a href="#collapseThree" data-toggle="collapse" data-parent="accordion">
-                    Question Three
+                  How long do I have access to the course materials?
                   </a>
                 </h5>
               </div>
 
               <div id="collapseThree" class="collapse">
                 <div class="card-body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio exercitationem dolor minus placeat
-                  amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae molestias nulla, quod
-                  voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                Once you enroll in a course, you have lifetime access to the course materials, including video lectures, downloadable resources, and assignments. You can review the content at your own pace and revisit it whenever you need to.
                 </div>
               </div>
             </div>
@@ -227,16 +222,14 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <a href="#collapseFour" data-toggle="collapse" data-parent="accordion">
-                    Question Four
+                  Can I interact with instructors or ask questions during the course?
                   </a>
                 </h5>
               </div>
 
               <div id="collapseFour" class="collapse">
                 <div class="card-body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio exercitationem dolor minus placeat
-                  amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae molestias nulla, quod
-                  voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                Absolutely! Our instructors are available to provide support and answer questions throughout the duration of the course. You can interact with instructors through discussion forums, live Q&A sessions, and email.
                 </div>
               </div>
             </div>
@@ -245,16 +238,14 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <a href="#collapseFive" data-toggle="collapse" data-parent="accordion">
-                    Question Five
+                  Will I receive a certificate upon completion of the course?
                   </a>
                 </h5>
               </div>
 
               <div id="collapseFive" class="collapse">
                 <div class="card-body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio exercitationem dolor minus placeat
-                  amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae molestias nulla, quod
-                  voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                Yes, upon successfully completing a course, you will receive a digital certificate of completion. Our certificates are industry-recognized and can be shared on your resume, LinkedIn profile, or portfolio to showcase your skills and achievements
                 </div>
               </div>
             </div>
@@ -263,16 +254,14 @@
               <div class="card-header">
                 <h5 class="mb-0">
                   <a href="#collapseSix" data-toggle="collapse" data-parent="accordion">
-                    Question Six
+                  Is financial assistance available for the courses?
                   </a>
                 </h5>
               </div>
 
               <div id="collapseSix" class="collapse">
                 <div class="card-body">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea officiis distinctio exercitationem dolor minus placeat
-                  amet commodi, ab a perspiciatis officia nobis reiciendis numquam totam repudiandae molestias nulla, quod
-                  voluptatibus modi rerum laboriosam tenetur. Nihil, soluta eaque? Minima, deserunt.
+                We offer various payment options, including installment plans and scholarships, to make our courses accessible to learners from diverse backgrounds. Additionally, many of our courses are eligible for employer reimbursement or government funding programs. Please contact our support team for more information on financial assistance options.
                 </div>
               </div>
             </div>
@@ -288,7 +277,7 @@
       <div class="row">
         <div class="col">
           <p>Copyright &copy;
-            <span id="year"></span> Glozzom</p>
+            <span id="year"></span> BizWeb Academy</p>
         </div>
       </div>
     </div>
