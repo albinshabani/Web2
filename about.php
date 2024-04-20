@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -184,3 +183,27 @@
 </body>
 
 </html>
+
+<?php
+
+class Page {
+  // Properties
+  public $pageName;
+  public $pageTitle;
+  
+  // Constructor
+  public function __construct($name, $title) {
+    $this->pageName = $name;
+    $this->pageTitle = $title;
+    echo "<script>console.log('Page Created: $this->pageName');</script>";
+  }
+
+  // Destructor
+  public function __destruct() {
+    echo "<script>console.log('Page Destroyed: $this->pageName');</script>";
+  }
+}
+
+$page = new Page("about", "About Us");
+?>
+
