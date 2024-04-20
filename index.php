@@ -98,17 +98,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 mb-4 text-center">
-        <i class="fas fa-chart-line fa-3x mb-2"></i>
+          <i class="fas fa-chart-line fa-3x mb-2"></i>
           <h3>Business Strategies</h3>
           <p>Learn effective business strategies to drive growth and success in your ventures.</p>
         </div>
         <div class="col-md-4 mb-4 text-center">
-        <i class="fas fa-database fa-3x mb-2"></i>
+          <i class="fas fa-database fa-3x mb-2"></i>
           <h3>Data Management</h3>
           <p>Master the art of data management and leverage it for informed decision-making.</p>
         </div>
         <div class="col-md-4 mb-4 text-center">
-        <i class="fas fa-store-alt fa-3x mb-2"></i>
+          <i class="fas fa-store-alt fa-3x mb-2"></i>
           <h3>E-commerce Solutions</h3>
           <p>Explore e-commerce solutions and learn how to effectively monetize your online presence.</p>
         </div>
@@ -225,9 +225,9 @@
           <h1>Subscribe to Our Newsletter</h1>
           <p>Stay updated with the latest news, events, and course offerings. Sign up now!</p>
           <form class="form-inline justify-content-center">
-            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Your Name">
-            <input type="email" class="form-control mb-2 mr-2" placeholder="Enter Your Email">
-            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+            <input id="nameInput" type="text" class="form-control mb-2 mr-2" placeholder="Enter Your Name">
+            <input id="emailInput" type="email" class="form-control mb-2 mr-2" placeholder="Enter Your Email">
+            <button type="submit" onclick="subscribe()" class="btn btn-primary mb-2">Subscribe</button>
           </form>
         </div>
       </div>
@@ -255,13 +255,11 @@
           <button class="close" data-dismiss="modal">
             <span>&times;</span>
           </button>
-          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+          <iframe id="videoFrame" src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
-
-
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -272,6 +270,42 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
   <script>
+    class Newsletter {
+      constructor(name, email) {
+        this._name = name;
+        this._email = email;
+      }
+
+      get name() {
+        return this._name;
+      }
+
+      set name(value) {
+        this._name = value;
+      }
+
+      get email() {
+        return this._email;
+      }
+
+      set email(value) {
+        this._email = value;
+      }
+
+      subscribe() {
+        alert(`Subscribed: ${this.name}, ${this.email}`);
+        // Here you can add the code to actually submit the form
+      }
+    }
+
+    function subscribe() {
+      let name = document.getElementById("nameInput").value;
+      let email = document.getElementById("emailInput").value;
+
+      let subscriber = new Newsletter(name, email);
+      subscriber.subscribe();
+    }
+
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
