@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
+      <a href="index.php" class="navbar-brand">Glozzom</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -60,83 +60,57 @@
       <div class="row">
         <div class="col">
           <div class="card-columns">
-            <div class="card">
-              <img src="https://source.unsplash.com/random/300x200" alt="" class="img-fluid card-img-top">
-              <div class="card-body">
-                <h4 class="card-title">Blog Post One</h4>
-                <small class="text-muted">Written by Jeff on 05/20</small>
-                <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi, quisquam, dignissimos
-                  molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit. Magni vel iusto mollitia
-                  exercitationem.
-                </p>
+            <!-- Blog Post One -->
+            <a href="BlogPosts/Post1.php" class="card-link">
+              <div class="card">
+                <img src="/img/BlogPostsImg/Post1Img.jpeg" alt="" class="img-fluid card-img-top">
+                <div class="card-body">
+                  <h4 class="card-title">Unlocking Opportunities: The Benefits of Learning a New Skill Online</h4>
+                  <small class="text-muted">Written by Eron on 04/20</small>
+                  <hr>
+                  <p class="card-text">In today's fast-paced world, the pursuit of knowledge and skills has evolved beyond the confines of traditional classrooms. The digital age has ushered in a new era of learning, offering countless opportunities to acquire expertise and enhance one's capabilities from the comfort of one's own home.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
 
-            <div class="card p-3">
-              <blockquote class="card-blockquote card-body">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident amet tenetur vel quam atque est?</p>
-                <footer class="blockquote-footer">
-                  <small class="text-muted">Someone Famous in
-                    <cite title="Source Title">Source Title</cite>
-                  </small>
-                </footer>
-              </blockquote>
-            </div>
-
-            <div class="card">
-              <img src="https://source.unsplash.com/random/301x200" alt="" class="img-fluid card-img-top">
-              <div class="card-body">
-                <h4 class="card-title">Blog Post Two</h4>
-                <small class="text-muted">Written by Karen on 05/22</small>
-                <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi, quisquam, dignissimos
-                  molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit. Magni vel iusto mollitia
-                  exercitationem.
-                </p>
+            <!-- Blog Post Two -->
+            <a href="blog-post-2.php" class="card-link">
+              <div class="card">
+                <img src="https://source.unsplash.com/random/301x200" alt="" class="img-fluid card-img-top">
+                <div class="card-body">
+                  <h4 class="card-title">Blog Post Two</h4>
+                  <small class="text-muted">Written by Karen on 05/22</small>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi,
+                    quisquam, dignissimos molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit.
+                    Magni vel iusto mollitia exercitationem.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
 
-            <div class="card p-3 bg-danger text-white">
-              <blockquote class="card-blockquote card-body">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident amet tenetur vel quam atque est?</p>
-                <footer class="blockquote-footer">
-                  <small class="text-white">Someone Famous in
-                    <cite title="Source Title">Source Title</cite>
-                  </small>
-                </footer>
-              </blockquote>
-            </div>
-
-            <div class="card">
-              <img src="https://source.unsplash.com/random/302x200" alt="" class="img-fluid card-img-top">
-              <div class="card-body">
-                <h4 class="card-title">Blog Post Three</h4>
-                <small class="text-muted">Written by Harry on 05/23</small>
-                <hr>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi, quisquam, dignissimos
-                  molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit. Magni vel iusto mollitia
-                  exercitationem.
-                </p>
+            <!-- Blog Post Three -->
+            <a href="blog-post-3.php" class="card-link">
+              <div class="card">
+                <img src="https://source.unsplash.com/random/302x200" alt="" class="img-fluid card-img-top">
+                <div class="card-body">
+                  <h4 class="card-title">Blog Post Three</h4>
+                  <small class="text-muted">Written by Harry on 05/23</small>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi,
+                    quisquam, dignissimos molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit.
+                    Magni vel iusto mollitia exercitationem.
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
 
-            <div class="card p-3">
-              <blockquote class="card-blockquote card-body">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident amet tenetur vel quam atque est?</p>
-                <footer class="blockquote-footer">
-                  <small class="text-muted">Someone Famous in
-                    <cite title="Source Title">Source Title</cite>
-                  </small>
-                </footer>
-              </blockquote>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- FOOTER -->
   <footer id="main-footer" class="text-center p-4">
@@ -150,18 +124,16 @@
     </div>
   </footer>
 
-
+  <!-- JavaScript links and script for copyright year -->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
-
   </script>
 </body>
 
