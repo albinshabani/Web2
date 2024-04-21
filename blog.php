@@ -74,33 +74,30 @@
               </div>
             </a>
 
-            <!-- Blog Post Two -->
-            <a href="blog-post-2.php" class="card-link">
+           <!-- Blog Post Two -->
+            <a href="BlogPosts/Post2.php" class="card-link">
               <div class="card">
-                <img src="https://source.unsplash.com/random/301x200" alt="" class="img-fluid card-img-top">
+                <img src="img/BlogPostsImg/Post2Img.jpeg" alt="" class="img-fluid card-img-top">
                 <div class="card-body">
-                  <h4 class="card-title">Blog Post Two</h4>
-                  <small class="text-muted">Written by Karen on 05/22</small>
+                  <h4 class="card-title">10 Essential Tips for Building a Successful Online Business</h4>
+                  <small class="text-muted">Written by Albin on 04/21</small>
                   <hr>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi,
-                    quisquam, dignissimos molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit.
-                    Magni vel iusto mollitia exercitationem.
+                  <p class="card-text">Briefly introduce the importance of online businesses in today's digital landscape. Mention the increasing number of entrepreneurs turning to the internet to start and grow their businesses.</p>
+
                   </p>
                 </div>
               </div>
             </a>
 
             <!-- Blog Post Three -->
-            <a href="blog-post-3.php" class="card-link">
+            <a href="BlogPosts/Post3.php" class="card-link">
               <div class="card">
-                <img src="https://source.unsplash.com/random/302x200" alt="" class="img-fluid card-img-top">
+                <img src="img/BlogPostsImg/Post3Img.jpeg" alt="" class="img-fluid card-img-top">
                 <div class="card-body">
-                  <h4 class="card-title">Blog Post Three</h4>
-                  <small class="text-muted">Written by Harry on 05/23</small>
+                  <h4 class="card-title">Mastering Social Media: Tips for Growing Your Online Presence</h4>
+                  <small class="text-muted">Written by Amir on 04/21</small>
                   <hr>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, sequi excepturi,
-                    quisquam, dignissimos molestiae dicta dolore dolores quas vel sunt placeat tempora expedita suscipit.
-                    Magni vel iusto mollitia exercitationem.
+                  <p class="card-text">Discuss the importance of building a strong social media presence for businesses, including increased brand visibility, engagement, and customer loyalty.
                   </p>
                 </div>
               </div>
