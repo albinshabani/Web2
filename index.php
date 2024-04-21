@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Bootstrap Theme</title>
 </head>
-
+<?php include 'Session_Cookies.php'; ?>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
