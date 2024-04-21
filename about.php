@@ -188,8 +188,8 @@
 
 class Page {
   // Properties
-  public $pageName;
-  public $pageTitle;
+  protected $pageName;
+  protected $pageTitle;
   
   // Constructor
   public function __construct($name, $title) {
@@ -202,8 +202,45 @@ class Page {
   public function __destruct() {
     echo "<script>console.log('Page Destroyed: $this->pageName');</script>";
   }
+
+  // Method
+  public function getPageTitle() {
+    return $this->pageTitle;
+  }
+
+  // Method
+  public function setPageTitle($title) {
+    $this->pageTitle = $title;
+  }
 }
 
-$page = new Page("about", "About Us");
-?>
+class WebPage extends Page {
+  // Properties
+  private $pageType;
+  
+  // Constructor
+  public function __construct($name, $title, $type) {
+    parent::__construct($name, $title);
+    $this->pageType = $type;
+    echo "<script>console.log('WebPage Created: $this->pageName');</script>";
+  }
 
+  // Destructor
+  public function __destruct() {
+    echo "<script>console.log('WebPage Destroyed: $this->pageName');</script>";
+    parent::__destruct();
+  }
+
+  // Method
+  public function getPageType() {
+    return $this->pageType;
+  }
+
+  // Method
+  public function setPageType($type) {
+    $this->pageType = $type;
+  }
+}
+
+$page = new WebPage("contact", "Contact Us", "Web");
+?>
