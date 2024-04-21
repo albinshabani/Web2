@@ -42,17 +42,14 @@ if(isset($_COOKIE['user'])) {
 if(isset($_POST['background'])) {
     // Set cookie for background color
     setcookie('background', $_POST['background'], time() + 3600);
-    // Refresh page to reflect changes
-    header('Location: ' . $_SERVER['PHP_SELF']);
-    exit;
+    exit; // Exit without refreshing the page
 }
 
 // Check if form is submitted to set username
 if(isset($_POST['username'])) {
     // Store username in session variable
     $_SESSION['username'] = $_POST['username'];
-    // Refresh page to reflect changes
-    header('Location: ' . $_SERVER['PHP_SELF']);
+    // Close the modal after setting the username
     exit;
 }
 
@@ -105,12 +102,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         /* Style for the modal content */
         .modal-content {
-            background-color: #fff;
+            background-color: #f4f4f4;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            max-width: 80%;
+            max-width: 400px;
+            width: 80%;
             position: relative; /* Added */
+            text-align: center;
         }
 
         /* Style for the close button */
@@ -119,6 +118,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             top: 10px;
             right: 10px;
             cursor: pointer;
+        }
+
+        /* Style for the buttons */
+        button {
+            background-color: #4b86b4; /* Colder color */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #3a6f9c; /* Darker shade of the colder color */
+        }
+
+        /* Style for the radio buttons */
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        /* Style for the input field */
+        input[type="text"] {
+            width: calc(100% - 26px);
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
         }
     </style>
 </head>
@@ -132,13 +164,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p><?php greetUser(); ?></p>
             <p>You have visited this page <?php echo $_SESSION['visits']; ?> times.</p>
             <h2>Change Background</h2>
-            <form method="post">
+            <form id="backgroundForm" method="post">
                 <label><input type="radio" name="background" value="light" <?php echo isset($_COOKIE['background']) && $_COOKIE['background'] == 'light' ? 'checked' : ''; ?>> Light</label>
-                <label><input type="radio" name="background" value="dark" <?php echo isset($_COOKIE['background']) && $_COOKIE['background'] == 'dark' ? 'checked' : ''; ?>> Dark</label>
-                <button type="submit">Save</button>
+                <label><input type="radio" name="background" value="dark" <?php echo isset($_COOKIE['background']) && $_COOKIE['background'] == 'dark' ? 'checked' : ''; ?>> Dark</label><br>
+                <button type="button" onclick="changeTheme()">Save</button>
             </form>
             <h2>Set Username</h2>
-            <form method="post">
+            <form id="usernameForm" method="post">
                 <input type="text" name="username" placeholder="Enter your username">
                 <button type="submit">Set Username</button>
             </form>
@@ -155,6 +187,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         function closeModal() {
             document.getElementById("modalBackground").style.display = "none";
         }
+
+        // Function to change theme without refreshing
+        function changeTheme() {
+            var xhr = new XMLHttpRequest();
+            var form = document.getElementById("backgroundForm");
+            var formData = new FormData(form);
+            xhr.open("POST", window.location.href, true);
+            xhr.send(formData);
+        }
+
+        // Close modal after setting username
+        document.getElementById("usernameForm").addEventListener("submit", function() {
+            var xhr = new XMLHttpRequest();
+            var form = document.getElementById("usernameForm");
+            var formData = new FormData(form);
+            xhr.open("POST", window.location.href, true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    closeModal();
+                }
+            };
+            xhr.send(formData);
+            event.preventDefault();
+        });
     </script>
 </body>
 </html>
