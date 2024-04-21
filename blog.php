@@ -63,7 +63,7 @@
             <!-- Blog Post One -->
             <a href="BlogPosts/Post1.php" class="card-link">
               <div class="card">
-                <img src="/img/BlogPostsImg/Post1Img.jpeg" alt="" class="img-fluid card-img-top">
+                <img src="img/BlogPostsImg/Post1Img.jpeg" alt="" class="img-fluid card-img-top">
                 <div class="card-body">
                   <h4 class="card-title">Unlocking Opportunities: The Benefits of Learning a New Skill Online</h4>
                   <small class="text-muted">Written by Eron on 04/20</small>
