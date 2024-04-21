@@ -11,7 +11,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Bootstrap Theme</title>
+  <title>BizWeb Academy</title>
 </head>
 <?php include 'Session_Cookies.php'; ?>
 <body>
