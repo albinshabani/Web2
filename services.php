@@ -60,6 +60,21 @@
   <section id="services" class="py-5">
     <div class="container">
       <div class="row">
+        <!-- Sorting Dropdown -->
+        <div class="col-md-12 mb-3 text-center">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="sortingMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Sort By
+            </button>
+            <div class="dropdown-menu" aria-labelledby="sortingMenuButton">
+              <a class="dropdown-item" href="services.php?sort=name">Service Name</a>
+              <a class="dropdown-item" href="services.php?sort=price-asc">Price: Low to High</a>
+              <a class="dropdown-item" href="services.php?sort=price-desc">Price: High to Low</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Sorting Dropdown -->
 
         <?php
           // Service data
@@ -97,15 +112,19 @@
           );
 
           // Sorting
-          // sort($services); // Sort by service name
-          // rsort($services); // Sort by service name in reverse order
-          // asort($services); // Sort by service price, maintain index association
-          // ksort($services); // Sort by service name, maintain index association
-          // arsort($services); // Sort by service price in reverse order, maintain index association
-          // krsort($services); // Sort by service name in reverse order, maintain index association
-
-          // Use one of the sorting functions above
-          ksort($services); // Sort by service name, maintain index association
+          $sortType = isset($_GET['sort']) ? $_GET['sort'] : 'name'; // Default sorting by name
+          switch ($sortType) {
+            case 'price-asc':
+              asort($services); // Sort by service price, maintain index association
+              break;
+            case 'price-desc':
+              arsort($services); // Sort by service price in reverse order, maintain index association
+              break;
+            case 'name':
+            default:
+              ksort($services); // Sort by service name, maintain index association
+              break;
+          }
 
           // Display services
           foreach ($services as $service_name => $service_details) {
@@ -286,7 +305,6 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
-
   </script>
 </body>
 
