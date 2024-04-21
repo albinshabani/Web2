@@ -54,74 +54,74 @@
       </div>
     </header>
 
-    <!-- CONTACT SECTION -->
     <section id="contact" class="py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card p-4">
-              <div class="card-body">
-                <h4>Get In Touch</h4>
-                <p>Questions or concerns? Reach out to us anytime. We're here to assist you!</p>
-                <h4>Address</h4>
-                <p>Rruga Adem Jashari 23, Prishtina, Kosovo</p>
-                <h4>Email</h4>
-                <p>bizwebacademy@gmail.com</p>
-                <h4>Phone</h4>
-                <p>(+383) 49-555-777</p>
-              </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <!-- Contact Details Column -->
+      <div class="col-md-4">
+        <div class="card p-4">
+          <div class="card-body">
+            <h4>Get In Touch</h4>
+            <p>Questions or concerns? Reach out to us anytime. We're here to assist you!</p>
+            <h4>Address</h4>
+            <p>Rruga Adem Jashari 23, Prishtina, Kosovo</p>
+            <h4>Email</h4>
+            <p>bizwebacademy@gmail.com</p>
+            <h4>Phone</h4>
+            <p>(+383) 49-555-777</p>
           </div>
-
-          <form action="save_contact.php" method="post">
-          <div class="col-md-8">
-            <div class="card p-4">
-              <div class="card-body">
-                <h3 class="text-center">Please fill out this form to contact us</h3>
-                <hr>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="first_name"placeholder="First Name">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="last_name" placeholder="Last Name">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="email" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          </form>
-          
         </div>
       </div>
-    </section>
+
+      <!-- Contact Form Column -->
+      <div class="col-md-8">
+        <form action="save_contact.php" method="post">
+          <div class="card p-4">
+            <div class="card-body">
+              <h3 class="text-center">Please fill out this form to contact us</h3>
+              <hr>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="first_name"placeholder="First Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- STAFF -->
     <section id="staff" class="py-5 text-center bg-dark text-white">
