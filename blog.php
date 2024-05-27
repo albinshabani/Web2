@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">BizWeb</a>
+      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,7 +48,7 @@
       <div class="row">
         <div class="col-md-6 m-auto text-center">
           <h1>Read Our Blog</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, temporibus?</p>
+          <p>"Discover the world through stories and insights"</p>
         </div>
       </div>
     </div>
@@ -115,7 +115,7 @@
       <div class="row">
         <div class="col">
           <p>Copyright &copy;
-            <span id="year"></span> Glozzom</p>
+            <span id="year"></span> BizWeb Academy</p>
         </div>
       </div>
     </div>
