@@ -24,7 +24,7 @@
                 <li class="nav-item">
                     <a href="about.php" class="nav-link">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a href="services.php" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
@@ -33,11 +33,13 @@
                 <li class="nav-item">
                     <a href="contact.php" class="nav-link">Contact</a>
                 </li>
-                <li class="nav-item">
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
                     <a href="login.php" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a href="signup.php" class="nav-link">Sign Up</a>
+                    <a href="sign_up.php" class="nav-link">Sign Up</a>
                 </li>
             </ul>
         </div>

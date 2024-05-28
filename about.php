@@ -39,6 +39,14 @@
             <a href="contact.php" class="nav-link">Contact</a>
           </li>
         </ul>
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="login.php" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sign_up.php" class="nav-link">Sign Up</a>
+                </li>
+            </ul>
       </div>
     </div>
   </nav>

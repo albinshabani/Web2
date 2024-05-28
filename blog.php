@@ -14,33 +14,41 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="index.php" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.php" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="services.php" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item active">
-            <a href="blog.php" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.php" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <a href="index.php" class="navbar-brand">BizWeb Academy</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.php" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="services.php" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="blog.php" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.php" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="login.php" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sign_up.php" class="nav-link">Sign Up</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 
   <!-- PAGE HEADER -->
   <header id="page-header">
@@ -63,7 +71,7 @@
             <!-- Blog Post One -->
             <a href="BlogPosts/Post1.php" class="card-link">
               <div class="card">
-                <img src="img/BlogPostsImg/Post1Img.jpeg" alt="" class="img-fluid card-img-top">
+                <img src="/img/BlogPostsImg/Post1Img.jpeg" alt="" class="img-fluid card-img-top">
                 <div class="card-body">
                   <h4 class="card-title">Unlocking Opportunities: The Benefits of Learning a New Skill Online</h4>
                   <small class="text-muted">Written by Eron on 04/20</small>
@@ -77,7 +85,7 @@
            <!-- Blog Post Two -->
             <a href="BlogPosts/Post2.php" class="card-link">
               <div class="card">
-                <img src="img/BlogPostsImg/Post2Img.jpeg" alt="" class="img-fluid card-img-top">
+                <img src="/img/BlogPostsImg/Post2Img.jpeg" alt="" class="img-fluid card-img-top">
                 <div class="card-body">
                   <h4 class="card-title">10 Essential Tips for Building a Successful Online Business</h4>
                   <small class="text-muted">Written by Albin on 04/21</small>
@@ -92,7 +100,7 @@
             <!-- Blog Post Three -->
             <a href="BlogPosts/Post3.php" class="card-link">
               <div class="card">
-                <img src="img/BlogPostsImg/Post3Img.jpeg" alt="" class="img-fluid card-img-top">
+                <img src="/img/BlogPostsImg/Post3Img.jpeg" alt="" class="img-fluid card-img-top">
                 <div class="card-body">
                   <h4 class="card-title">Mastering Social Media: Tips for Growing Your Online Presence</h4>
                   <small class="text-muted">Written by Amir on 04/21</small>
