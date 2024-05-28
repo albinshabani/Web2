@@ -11,6 +11,9 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
   <title>BizWeb Academy</title>
 </head>
 <?php include 'Session_Cookies.php'; ?>
@@ -226,22 +229,36 @@
     </div>
   </section>
 
- <!-- NEWSLETTER -->
-  <section id="newsletter" class="text-center p-5 bg-dark text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Subscribe to Our Newsletter</h1>
-          <p>Stay updated with the latest news, events, and course offerings. Sign up now!</p>
-          <form class="form-inline justify-content-center">
-            <input id="nameInput" type="text" class="form-control mb-2 mr-2" placeholder="Enter Your Name">
-            <input id="emailInput" type="email" class="form-control mb-2 mr-2" placeholder="Enter Your Email">
-            <button type="submit" onclick="subscribe()" class="btn btn-primary mb-2">Subscribe</button>
-          </form>
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="text-center p-5">
+  <div class="container">
+    <h2>Our Achievements</h2>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="achievement">
+          <i class="fas fa-globe fa-3x mb-4"></i>
+          <h3>Global Reach</h3>
+          <p>Delivering our services to clients across the globe, helping businesses and individuals achieve success worldwide.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="achievement">
+          <i class="fas fa-medal fa-3x mb-4"></i>
+          <h3>Award-Winning Services</h3>
+          <p>Recognized for excellence in our industry, receiving prestigious awards for our innovative and effective services.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="achievement">
+          <i class="fas fa-chart-line fa-3x mb-4"></i>
+          <h3>Proven Results</h3>
+          <p>Helping clients achieve significant growth and success through our tailored services and expert guidance.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer id="main-footer" class="text-center p-4">
