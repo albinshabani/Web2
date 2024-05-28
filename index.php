@@ -15,33 +15,42 @@
 </head>
 <?php include 'Session_Cookies.php'; ?>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-      <a href="index.php" class="navbar-brand">BizWeb Academy</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a href="index.php" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.php" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="services.php" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="blog.php" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.php" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <a href="index.php" class="navbar-brand">BizWeb Academy</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.php" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="services.php" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.php" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.php" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="login.php" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sign_up.php" class="nav-link">Sign Up</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
+
 
   <!-- SHOWCASE SLIDER -->
   <section id="showcase">
@@ -57,7 +66,7 @@
             <div class="carousel-caption d-none d-sm-block text-right mb-5">
               <h1 class="display-3">Business Academy</h1>
               <p class="lead">Learn essential business skills and strategies from industry experts. Join us and unlock your potential today!</p>
-              <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+              <a href="sign_up.php" class="btn btn-danger btn-lg">Sign Up Now</a>
             </div>
           </div>
         </div>
