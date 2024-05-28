@@ -3,7 +3,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "13131313";
+$password = "1234";
 $dbname = "bizweb_academy";
 
 // Create connection
