@@ -1,3 +1,55 @@
+<?php
+// Function to translate HTML content
+function translateHTML($html_content, $source_lang, $target_lang) {
+  // Check if HTML content is empty
+  if (empty($html_content)) {
+      return ''; // Return empty string if no content
+  }
+
+  // Create a DOMDocument object
+  $dom = new DOMDocument();
+  libxml_use_internal_errors(true); // Disable warnings
+
+  // Load HTML content into the DOMDocument object
+  $success = $dom->loadHTML(mb_convert_encoding($html_content, 'HTML-ENTITIES', 'UTF-8'));
+
+  // Check if loading HTML was successful
+  if (!$success) {
+      // Handle error
+      $errors = libxml_get_errors(); // Get errors
+      libxml_clear_errors(); // Clear errors
+      return ''; // Return empty string on error
+  }
+
+  // Translate text nodes recursively
+  translateTextNodes($dom->documentElement, $source_lang, $target_lang);
+
+  // Save the modified HTML content
+  $translated_html = $dom->saveHTML();
+
+  return $translated_html;
+}
+
+// Function to translate text nodes recursively
+function translateTextNodes($node, $source_lang, $target_lang) {
+  if ($node->nodeType === XML_TEXT_NODE) {
+      // Translate text node
+      $translated_text = translateText($node->nodeValue, $source_lang, $target_lang);
+      $node->nodeValue = $translated_text;
+  } elseif ($node->hasChildNodes()) {
+      // Recursively translate child nodes
+      foreach ($node->childNodes as $childNode) {
+          translateTextNodes($childNode, $source_lang, $target_lang);
+      }
+  }
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 
 <html lang="en">

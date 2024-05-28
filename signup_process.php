@@ -4,6 +4,11 @@ session_start();
 // Include or require the file where the database connection is established
 require_once "./database/db.php"; // Adjust the file path as per your project structure
 
+// Function to return a reference to a session variable
+function &getSessionReference($key) {
+    return $_SESSION[$key];
+}
+
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if all required fields are provided
@@ -33,11 +38,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Execute the statement
         if ($stmt->execute()) {
-            // Set session variables or perform any other actions (e.g., redirecting to a dashboard page)
-            $_SESSION['first_name'] = $first_name;
-            $_SESSION['last_name'] = $last_name;
-            $_SESSION['email'] = $email;
-            $_SESSION['registered'] = true;
+            // Set session variables using references
+            $sessionFirstName = &getSessionReference('first_name');
+            $sessionLastName = &getSessionReference('last_name');
+            $sessionEmail = &getSessionReference('email');
+            $sessionRegistered = &getSessionReference('registered');
+
+            $sessionFirstName = $first_name;
+            $sessionLastName = $last_name;
+            $sessionEmail = $email;
+            $sessionRegistered = true;
+
+            // Example of passing by reference
+            function updateSessionVariable(&$variable, $value) {
+                $variable = $value;
+            }
+
+            updateSessionVariable($_SESSION['last_name'], $last_name);
 
             // Redirect to a dashboard page or any other page
             header("Location: index.php");
@@ -47,6 +64,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: sign_up.php?error=database_error");
             exit;
         }
+
+        // Unset sensitive data
+        unset($_POST['password']);
+        unset($_POST['confirm_password']);
 
         // Close the statement
         $stmt->close();

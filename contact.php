@@ -26,7 +26,7 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
@@ -38,7 +38,7 @@ session_start();
                 <li class="nav-item">
                     <a href="blog.php" class="nav-link">Blog</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="contact.php" class="nav-link">Contact</a>
                 </li>
             </ul>
