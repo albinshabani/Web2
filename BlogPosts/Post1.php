@@ -16,34 +16,34 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-        <a href="index.php" class="navbar-brand">BizWeb Academy</a>
+        <a href="../index.php" class="navbar-brand">BizWeb Academy</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link">Home</a>
+                    <a href="../index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.php" class="nav-link">About Us</a>
+                    <a href="../about.php" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item ">
-                    <a href="services.php" class="nav-link">Services</a>
+                    <a href="../services.php" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item active">
-                    <a href="blog.php" class="nav-link">Blog</a>
+                    <a href="../blog.php" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="contact.php" class="nav-link">Contact</a>
+                    <a href="../contact.php" class="nav-link">Contact</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="login.php" class="nav-link">Login</a>
+                    <a href="../login.php" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a href="sign_up.php" class="nav-link">Sign Up</a>
+                    <a href="../sign_up.php" class="nav-link">Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -68,7 +68,7 @@
       <div class="row">
         <div class="col">
           <div class="card">
-            <img src="/img/BlogPostsImg/Post1Img.jpeg" alt="" class="img-fluid card-img-top">
+            <img src="../img/image1.jpg" alt="" class="img-fluid card-img-top">
             <div class="card-body">
               <p class="lead">Introduction: Brief overview of the blog post content.</p>
               <p>In today's fast-paced world, the pursuit of knowledge and skills has evolved beyond the confines of traditional classrooms. The digital age has ushered in a new era of learning, offering countless opportunities to acquire expertise and enhance one's capabilities from the comfort of one's own home. One of the most prominent manifestations of this transformation is the rise of online learning platforms, which have democratized education and empowered individuals to pursue their passions and career aspirations like never before.</p>
