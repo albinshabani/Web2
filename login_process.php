@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $password = $_POST['password'];
 
         // Prepare and bind a statement to retrieve user data based on the provided email
-        $stmt = $conn->prepare("SELECT email, password FROM users WHERE email = ?");
+        $stmt = $conn->prepare("SELECT email, password, first_name FROM users WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -26,9 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Verify the password
             if (password_verify($password, $row['password'])) {
                 // Authentication successful
-                // Set user session variables or perform any other actions (e.g., redirecting to a dashboard page)
+                // Set user session variables
                 $_SESSION['email'] = $email;
                 $_SESSION['logged_in'] = true;
+                $_SESSION['first_name'] = $row['first_name']; // Set the first name from the database
 
                 // Redirect to a dashboard page or any other authenticated page
                 header("Location: index.php");

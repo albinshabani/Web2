@@ -1,4 +1,8 @@
   <!DOCTYPE html>
+  <?php
+// Start the session
+session_start();
+?>
   <html lang="en">
 
   <head>
@@ -22,30 +26,49 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.php" class="nav-link">About Us</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a href="services.php" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
                     <a href="blog.php" class="nav-link">Blog</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="contact.php" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="login.php" class="nav-link">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a href="sign_up.php" class="nav-link">Sign Up</a>
-                </li>
-            </ul>
+            <?php
+            if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']) { 
+                // If logged in, display user-specific links
+                ?>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Welcome, <?php echo $_SESSION['first_name']; ?></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="logout.php" class="nav-link">Logout</a>
+                    </li>
+                </ul>
+                <?php
+            } else {
+                // If not logged in, display login and sign up links
+                ?>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="login.php" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sign_up.php" class="nav-link">Sign Up</a>
+                    </li>
+                </ul>
+                <?php
+            }
+            ?>
         </div>
     </div>
 </nav>
