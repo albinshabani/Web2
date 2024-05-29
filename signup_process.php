@@ -1,4 +1,10 @@
 <?php
+// Include custom error handler definition
+require_once 'custom_error_handler.php'; // Adjust the path to where your custom error handler is defined
+
+// Set the custom error handler
+set_error_handler("customErrorHandler");
+
 session_start();
 
 // Include or require the file where the database connection is established
@@ -34,6 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Prepare and bind
         $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?)");
+        if (!$stmt) {
+            // Trigger an error if statement preparation fails
+            trigger_error("Database prepare statement failed: " . $conn->error, E_USER_ERROR);
+        }
         $stmt->bind_param("ssss", $first_name, $last_name, $email, $hashed_password);
 
         // Execute the statement
@@ -60,9 +70,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: index.php");
             exit;
         } else {
-            // If there is an error inserting the user, redirect back to sign-up page with an error message
-            header("Location: sign_up.php?error=database_error");
-            exit;
+            // Trigger an error if execution fails
+            trigger_error("Database execution failed: " . $stmt->error, E_USER_ERROR);
         }
 
         // Unset sensitive data

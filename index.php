@@ -1,51 +1,60 @@
-<?php
-// Function to translate HTML content
-function translateHTML($html_content, $source_lang, $target_lang) {
-  // Check if HTML content is empty
-  if (empty($html_content)) {
-      return ''; // Return empty string if no content
-  }
+<script>
+        var xhr = new XMLHttpRequest();
 
-  // Create a DOMDocument object
-  $dom = new DOMDocument();
-  libxml_use_internal_errors(true); // Disable warnings
+        // Configure it: GET-request for the URL /article/.../load
+        xhr.open('GET', 'https://api.unsplash.com/search/photos?query=${term}', true);
 
-  // Load HTML content into the DOMDocument object
-  $success = $dom->loadHTML(mb_convert_encoding($html_content, 'HTML-ENTITIES', 'UTF-8'));
+        // Set up a function to handle the response data
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Parse the JSON response
+                var response = JSON.parse(xhr.responseText);
 
-  // Check if loading HTML was successful
-  if (!$success) {
-      // Handle error
-      $errors = libxml_get_errors(); // Get errors
-      libxml_clear_errors(); // Clear errors
-      return ''; // Return empty string on error
-  }
+                // Manipulate the data
+                console.log(response);
 
-  // Translate text nodes recursively
-  translateTextNodes($dom->documentElement, $source_lang, $target_lang);
+                // For example, extract a specific field
+                var someData = response.someField;
+                console.log(someData);
+            }
+        };
 
-  // Save the modified HTML content
-  $translated_html = $dom->saveHTML();
+        // Send the request
+        xhr.send();
 
-  return $translated_html;
-}
-
-// Function to translate text nodes recursively
-function translateTextNodes($node, $source_lang, $target_lang) {
-  if ($node->nodeType === XML_TEXT_NODE) {
-      // Translate text node
-      $translated_text = translateText($node->nodeValue, $source_lang, $target_lang);
-      $node->nodeValue = $translated_text;
-  } elseif ($node->hasChildNodes()) {
-      // Recursively translate child nodes
-      foreach ($node->childNodes as $childNode) {
-          translateTextNodes($childNode, $source_lang, $target_lang);
-      }
-  }
-}
+        </script>
 
 
-?>
+<script>
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Configure it: POST-request for the URL /submit
+        xhr.open('POST', 'https://api.unsplash.com/search/photos?query=${term}', true);
+
+        // Set the request header for JSON
+        xhr.setRequestHeader('Content-Type', 'application/json');
+
+        // Set up a function to handle the response data
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Parse the JSON response
+                var response = JSON.parse(xhr.responseText);
+
+                // Manipulate the data
+                console.log(response);
+            }
+        };
+
+        // Prepare the data to be sent
+        var data = JSON.stringify({
+            key1: 'value1',
+            key2: 'value2'
+        });
+
+        // Send the request with the data
+        xhr.send(data);
+    </script>
 
 
 
@@ -399,7 +408,7 @@ function translateTextNodes($node, $source_lang, $target_lang) {
     });
 
   </script>
-  <script src="js/api.js"></script>
+  <!-- <script src="js/api.js"></script> -->
 </body>
 
 </html>
