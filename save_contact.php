@@ -75,22 +75,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Password = 'ktqy asqc dlgs qxvf'; // Use App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
-
+        
         // Recipients
         $mail->setFrom($email, $firstName . ' ' . $lastName);
         $mail->addAddress('eronbberisha@gmail.com'); // Replace with your recipient email
-
+        
         // Content
         $mail->isHTML(true);
         $mail->Subject = 'Contact Form Submission from ' . $firstName . ' ' . $lastName;
         $mail->Body = nl2br($messageContent); // Converts newlines to HTML line breaks
-
+        
         $mail->send();
         echo 'Email sent successfully!';
-    } catch (Exception $e) {
-        echo "Failed to send email. Mailer Error: {$mail->ErrorInfo}";
-    }
-} else {
-    echo "Invalid request method.";
-}
-?>
+        } catch (Exception $e) {
+            echo "Failed to send email. Mailer Error: {$mail->ErrorInfo}";
+        }
+        } else {
+            echo "Invalid request method.";
+        }
+        ?>
+        
