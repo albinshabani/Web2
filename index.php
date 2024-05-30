@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
         var xhr = new XMLHttpRequest();
 
         // Configure it: GET-request for the URL /article/.../load
@@ -54,7 +54,7 @@
 
         // Send the request with the data
         xhr.send(data);
-    </script>
+    </script> -->
 
 
 
@@ -408,7 +408,7 @@
     });
 
   </script>
-  <!-- <script src="js/api.js"></script> -->
+  <script src="js/api.js"></script>
 </body>
 
 </html>

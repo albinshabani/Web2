@@ -1,5 +1,4 @@
 <?php
-// Start session
 session_start();
 
 // Function to increment visit count
@@ -154,33 +153,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     </style>
 </head>
-<body>
-    <!-- Modal background -->
-    <div class="modal-background" id="modalBackground">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span> <!-- Close button -->
-            <h1><?php echo $message; ?></h1>
-            <p><?php greetUser(); ?></p>
-            <p>You have visited this page <?php echo $_SESSION['visits']; ?> times.</p>
-            <h2>Change Background</h2>
-            <form id="backgroundForm" method="post">
-                <label><input type="radio" name="background" value="light" <?php echo isset($_COOKIE['background']) && $_COOKIE['background'] == 'light' ? 'checked' : ''; ?>> Light</label>
-                <label><input type="radio" name="background" value="dark" <?php echo isset($_COOKIE['background']) && $_COOKIE['background'] == 'dark' ? 'checked' : ''; ?>> Dark</label><br>
-                <button type="button" onclick="changeTheme()">Save</button>
-            </form>
-            <h2>Set Username</h2>
-            <form id="usernameForm" method="post">
-                <input type="text" name="username" placeholder="Enter your username">
-                <button type="submit">Set Username</button>
-            </form>
+<body style="background-color: <?php echo setBackgroundColor(); ?>; color: <?php echo setTextColor(); ?>;">
+    <?php
+    // Display the modal only once
+    if (!isset($_SESSION['modal_shown'])) {
+        $_SESSION['modal_shown'] = true;
+        ?>
+        <!-- Modal background -->
+        <div class="modal-background" id="modalBackground">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span> <!-- Close button -->
+                <h1><?php echo $message; ?></h1>
+                <p><?php greetUser(); ?></p>
+                <p>You have visited this page <?php echo $_SESSION['visits']; ?> times.</p>
+                <h2>Change Background</h2>
+                <form id="backgroundForm" method="post">
+                    <label><input type="radio" name="background" value="light" <?php echo isset($_COOKIE['background']) && $_COOKIE['background'] == 'light' ? 'checked' : ''; ?>> Light</label>
+                    <label><input type="radio" name="background" value="dark" <?php echo isset($_COOKIE['background']) && $_COOKIE['background'] == 'dark' ? 'checked' : ''; ?>> Dark</label><br>
+                    <button type="button" onclick="changeTheme()">Save</button>
+                </form>
+                <h2>Set Username</h2>
+                <form id="usernameForm" method="post">
+                    <input type="text" name="username" placeholder="Enter your username">
+                    <button type="submit">Set Username</button>
+                </form>
+            </div>
         </div>
-    </div>
-
+        <?php
+    }
+    ?>
     <script>
-        // Display the modal on page load
+        // Display the modal on page load if it exists
         document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("modalBackground").style.display = "flex";
+            var modalBackground = document
+            var modalBackground = document.getElementById("modalBackground");
+            if (modalBackground) {
+                modalBackground.style.display = "flex";
+            }
         });
 
         // Function to close the modal
@@ -198,7 +208,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Close modal after setting username
-        document.getElementById("usernameForm").addEventListener("submit", function() {
+        document.getElementById("usernameForm").addEventListener("submit", function(event) {
+            event.preventDefault();
             var xhr = new XMLHttpRequest();
             var form = document.getElementById("usernameForm");
             var formData = new FormData(form);
@@ -209,8 +220,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             };
             xhr.send(formData);
-            event.preventDefault();
         });
     </script>
 </body>
 </html>
+
